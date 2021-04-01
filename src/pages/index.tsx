@@ -28,7 +28,7 @@ export default function Home() {
           type="secondary-light"
           size="large"
         >
-          Download
+          Add to Chrome
         </Button>
 
         {/* <Display caption={<p>rerender.</p>}>
