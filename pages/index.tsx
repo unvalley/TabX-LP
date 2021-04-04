@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Head>
         <title>
-          {CATCH_COPY} | {APP_NAME}
+          {APP_NAME} - {CATCH_COPY}
         </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
