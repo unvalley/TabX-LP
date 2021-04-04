@@ -2,7 +2,7 @@ import {Button, Grid, Image} from '@geist-ui/react'
 import {Chrome} from '@geist-ui/react-icons'
 import Head from 'next/head'
 import React from 'react'
-import styles from '../../styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const CATCH_COPY = 'Save your Tab Life'
