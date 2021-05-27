@@ -4,7 +4,7 @@ import Head from '../components/Head'
 import React from 'react'
 import styles from '../styles/Home.module.css'
 
-const CATCH_COPY = 'Save your Tab Life'
+const CATCH_COPY = 'Storing your tabs more simple.'
 const SUB_PHRASE = 'Simple tab managegment Extension'
 const APP_NAME = 'TabX'
 const TITLE = `${APP_NAME} - ${CATCH_COPY}`
@@ -13,7 +13,7 @@ const DESCRIPTION = 'TabX is a simple tab management Chrome Extension. Try it!'
 const LP_LINK = 'https://tabx.app'
 const STORE_LINK =
   'https://chrome.google.com/webstore/detail/tabx/pnomgepiknocmkmncjkcchojfiookljb?hl=en&authuser=1'
-const ISSUE_LINK = ''
+const ISSUE_LINK = 'https://github.com/unvalley/TabX'
 
 export default function Home() {
   return (
