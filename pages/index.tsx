@@ -13,7 +13,7 @@ const DESCRIPTION = 'TabX is a simple tab management Chrome Extension. Try it!'
 const LP_LINK = 'https://tabx.app'
 const STORE_LINK =
   'https://chrome.google.com/webstore/detail/tabx/pnomgepiknocmkmncjkcchojfiookljb?hl=en&authuser=1'
-const ISSUE_LINK = 'https://github.com/unvalley/TabX'
+const ISSUE_LINK = 'https://github.com/unvalley/TabX/issues'
 
 export default function Home() {
   return (
