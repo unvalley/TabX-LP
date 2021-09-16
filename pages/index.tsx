@@ -1,14 +1,15 @@
-import { Button, Display, Grid, Image, Spacer, Text } from '@geist-ui/react'
+import { Button, Grid, Image } from '@geist-ui/react'
 import { Chrome } from '@geist-ui/react-icons'
 import Head from '../components/Head'
 import React from 'react'
 import styles from '../styles/Home.module.css'
 
-const CATCH_COPY = 'Storing your tabs more simple.'
-const SUB_PHRASE = 'Simple tab managegment Extension'
+const CATCH_COPY = 'Storing your tabs more simply'
+const SUB_PHRASE = 'A simple tab management tool 🪣'
 const APP_NAME = 'TabX'
 const TITLE = `${APP_NAME} - ${CATCH_COPY}`
-const DESCRIPTION = 'TabX is a simple tab management Chrome Extension. Try it!'
+const DESCRIPTION =
+  'TabX is a chrome Extension for simple tab management. Try it!'
 
 const LP_LINK = 'https://tabx.app'
 const STORE_LINK =
@@ -44,7 +45,6 @@ export default function Home() {
       <section className={styles.container}>
         <Grid.Container gap={2} justify="center" direction="row-reverse">
           <Grid xs={24} md={24} lg={12} style={{ margin: 'auto 0' }}>
-            {/* <h1 className={styles.title}>{CATCH_COPY}</h1> */}
             <h2 className={styles.title}>{CATCH_COPY}</h2>
             <p className={styles.description}>{SUB_PHRASE}</p>
             {/* Chrome Icon */}
@@ -63,7 +63,7 @@ export default function Home() {
           </Grid>
 
           <Grid xs={24} md={24} lg={12}>
-            <Image width={700} height={360} src="/screenshot-dark.png" />
+            <Image width={700} height={360} src="/TabX_dark.png" />
           </Grid>
         </Grid.Container>
       </section>
