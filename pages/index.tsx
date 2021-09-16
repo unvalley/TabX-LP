@@ -1,26 +1,33 @@
 import { Button, Grid, Image } from '@geist-ui/react'
-import { Chrome } from '@geist-ui/react-icons'
+import { Chrome, Github } from '@geist-ui/react-icons'
 import Head from '../components/Head'
 import React from 'react'
 import styles from '../styles/Home.module.css'
 
+const APP_NAME = 'TabX'
 const CATCH_COPY = 'Storing your tabs more simply'
 const SUB_PHRASE = 'A simple tab management tool 🪣'
-const APP_NAME = 'TabX'
+
 const TITLE = `${APP_NAME} - ${CATCH_COPY}`
 const DESCRIPTION =
   'TabX is a chrome Extension for simple tab management. Try it!'
 
 const LP_LINK = 'https://tabx.app'
+const GITHUB_LINK = 'https://github.com/unvalley/TabX'
+
 const STORE_LINK =
   'https://chrome.google.com/webstore/detail/tabx/pnomgepiknocmkmncjkcchojfiookljb?hl=en&authuser=1'
-const ISSUE_LINK = 'https://github.com/unvalley/TabX/issues'
+const ISSUE_LINK = `${GITHUB_LINK}/issues`
 
 export default function Home() {
   return (
     <html lang="en">
-      <Head title={TITLE} description={DESCRIPTION} image="" url={LP_LINK} />
-
+      <Head
+        title={TITLE}
+        description={DESCRIPTION}
+        image="/TabX_ogp.png"
+        url={LP_LINK}
+      />
       <header className={styles.header}>
         <a href="" className={styles.headerlink}>
           <img
@@ -43,12 +50,13 @@ export default function Home() {
       </header>
 
       <section className={styles.container}>
-        <Grid.Container gap={2} justify="center" direction="row-reverse">
+        <Grid.Container justify="center" direction="row-reverse">
           <Grid xs={24} md={24} lg={12} style={{ margin: 'auto 0' }}>
-            <h2 className={styles.title}>{CATCH_COPY}</h2>
-            <p className={styles.description}>{SUB_PHRASE}</p>
-            {/* Chrome Icon */}
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ paddingBottom: '20px' }}>
+              <h2 className={styles.title}>{CATCH_COPY}</h2>
+              <p className={styles.description}>{SUB_PHRASE}</p>
+            </div>
+            <Grid.Container gap={2} justify="center" alignItems="center">
               <Button
                 icon={<Chrome size={40} />}
                 auto
@@ -59,7 +67,17 @@ export default function Home() {
               >
                 Add to Chrome
               </Button>
-            </div>
+              <Button
+                icon={<Github size={40} />}
+                auto
+                type="secondary"
+                size="large"
+                className={styles.button}
+                onClick={() => window.open(GITHUB_LINK, '_blank')}
+              >
+                Go To GitHub
+              </Button>
+            </Grid.Container>
           </Grid>
 
           <Grid xs={24} md={24} lg={12}>
@@ -67,14 +85,6 @@ export default function Home() {
           </Grid>
         </Grid.Container>
       </section>
-
-      {/* <footer className={styles.footer}>
-        <a href={STORE_LINK} target="_blank" rel="noopener noreferrer">
-          TabX
-        </a>
-        {/* <Spacer y={1} /> */}
-      {/* <a href={STORE_LINK}>Privacy Policy & Regal</a> */}
-      {/* </footer> */}
     </html>
   )
 }

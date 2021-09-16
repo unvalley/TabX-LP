@@ -8,7 +8,7 @@ interface Props {
   url: string
 }
 
-export default ({title, description, image, url}: Props): JSX.Element => {
+export default ({ title, description, image, url }: Props): JSX.Element => {
   return (
     <Head>
       <title>{title}</title>
