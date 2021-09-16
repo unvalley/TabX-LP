@@ -25,7 +25,7 @@ export default function Home() {
       <Head
         title={TITLE}
         description={DESCRIPTION}
-        image="/TabX_ogp.png"
+        image="https://tabx.app/public/TabX_ogp.png"
         url={LP_LINK}
       />
       <header className={styles.header}>
