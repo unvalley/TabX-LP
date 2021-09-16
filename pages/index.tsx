@@ -56,7 +56,12 @@ export default function Home() {
               <h2 className={styles.title}>{CATCH_COPY}</h2>
               <p className={styles.description}>{SUB_PHRASE}</p>
             </div>
-            <Grid.Container gap={2} justify="center" alignItems="center">
+            <Grid.Container
+              gap={2}
+              justify="center"
+              alignItems="center"
+              style={{ marginBottom: '20px' }}
+            >
               <Button
                 icon={<Chrome size={40} />}
                 auto
